@@ -1,0 +1,93 @@
+:root {
+--fonte0: 'Arial', Helvetica, sans-serif;
+--fonte1: 'Reddit mono', sans-serif;
+--fonte2: 'Roboto Condensed', sans-serif;
+--cor0: #1B7F7A;
+--cor1: #0897B4;
+--cor2: #4CABA6;
+--cor3: #F2CDAC;
+}
+body {
+    background-color: var(--cor2);
+}
+header {
+    background-image: linear-gradient(#06849e, #1f918b);
+    font-family: var(--fonte1);
+    padding: 20px;
+    border-radius: 2px;
+    text-shadow: 0.2px 0.5px 0.1px;
+    box-shadow: 1px 1px 4px;
+    
+}
+nav {
+    height: 10px;
+    
+}
+div {
+    padding-left: 30%;
+    padding-top: 5px;
+   
+}
+a {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-left: 8px;
+    text-decoration: none;
+    
+}
+a:hover {
+    border-radius: 4px;
+    background-color: #51b9b497;
+    text-decoration: none;
+}
+main {
+    background-color: #fff;
+    font-family: var(--fonte2);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 1px;
+    box-shadow: 1px 1px 5px;
+}
+h1 {
+    margin-top: 1px;
+    margin-right: 0px;
+    margin-left: 3px;
+}
+h2 {
+    padding-left: 5px;
+}
+h3 {
+    padding-left: 5px;
+}
+p {
+    padding-top: 2px;
+    margin-top: 1px;
+    margin-right: 2px;
+    margin-left: 3px;
+    padding-left: 5px;   
+}
+ul {
+    list-style-type: '\2714\0020\0020';
+    list-style-position: inside;
+}
+.lilink {
+    text-decoration: none;
+    font-weight: 1.2em;
+}
+.lilink:hover {
+    background-color: #0897b47c;
+    text-decoration: none;
+}
+footer {
+    background-color: var(--cor0);
+    border-radius: 3px;
+    
+}
+
+.footerp {
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}

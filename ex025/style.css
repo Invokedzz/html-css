@@ -1,0 +1,29 @@
+
+  
+
+body {
+    background-image: linear-gradient(to right,#131313f2, #404d59dd);
+    
+}
+
+h1 {
+    color: #49668C;
+    text-shadow: 0.5px 0.5px 1px;
+}
+
+h2 {
+    color: #49668C;
+    text-shadow: 0.3px 0.3px 0.5px;
+}
+main {
+    background-color: #fff;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 900px;
+    box-shadow: 4px 1px 10px;
+    font-family: "Castoro", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}

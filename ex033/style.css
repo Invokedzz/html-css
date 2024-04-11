@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --cor1:hsl(14, 45%, 36%);
+    --cor2:hsl(332, 51%, 32%);
+    --cor3: #fff;
+    --cor4: rgb(255, 245, 250);
+    --cor5: hsl(30, 54%, 90%);
+    --cor6: hsl(30, 18%, 87%);
+    --cor7: hsl(30, 10%, 34%);
+    --cor8: hsl(24, 5%, 18%);
+    --fonte1: 'Young Serif', serif;
+    --fonte2: 'Outfit', sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: var(--fonte2);
+}
+body {
+    background-color: var(--cor5);
+}
+main {
+    background-color: hsl(0, 0%, 100%);
+    min-width: 375px;
+    max-width: 800px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+}
+main h1 {
+    font-size: 2em;
+    padding: 10px;
+    padding-bottom: 5%;
+    padding-left: 15px;
+    font-family: var(--fonte1);
+}
+main p {
+    text-align: center;
+}
+main h2 {
+    font-size: 1.5em;
+    padding: 10px;
+    padding-left: 30px;
+    padding-bottom: 1.75%;
+    color: var(--cor1);
+    margin-top: 10px;
+    font-family: var(--fonte1);
+}
+article {
+    background-color: var(--cor4);
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 2.5%;
+    border-radius: 4px;
+    width: 700px;
+}
+article p {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--cor2);
+    font-size: 1.1em;
+    padding-bottom: 8px;
+}
+article li {
+    margin: 8px;
+    margin-top: 10px;
+    text-indent: 10px;
+}
+main li {
+ margin: 5px;
+ padding-left: 5%;
+ line-height: 1.4em;
+ color: black; 
+
+}
+main .hr2 {
+    width: 600px;
+    margin-left: 13%;
+    margin-top: 20px;   
+}
+strong {
+    color: rgb(97, 97, 97);
+}
+main > ul {
+    list-style-position: inside;
+    color: var(--cor1);
+}
+
+main > ol {
+    list-style-position: inside;
+    color: var(--cor1);
+}
+
+article > ul {
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';  
+}
+main .nutrition {
+    text-align: justify;
+    padding-left: 15px;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+main .ull {
+    list-style: none;
+    columns: 2;
+    padding: 20px;
+    margin: auto;
+    display: block;
+    padding-left: 12%;
+    padding-bottom: 10px;
+    display: block;
+}
+hr {
+    width: 600px;
+}
+main .lin {
+    margin-top: 15px;
+    color: var(--cor1);
+}

@@ -1,0 +1,45 @@
+div {
+    background-color:hsl(0, 0%, 12%);
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+body {
+    background-color: black;
+}
+.centralizado {
+    text-align: center;
+
+}
+.parag {
+    color: #fff;
+    text-align: center;
+
+}
+.local {
+    color: hsl(75, 94%, 57%);
+    text-align: center;
+}
+.sp {
+    background-color: hsl(0, 0%, 20%);
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.info {
+    color: #fff;
+    text-align: center;
+    
+}
+p {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5px;
+}
+a {
+    width: fit-content;
+}

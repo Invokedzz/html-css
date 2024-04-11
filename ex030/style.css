@@ -1,0 +1,132 @@
+
+header {
+    background-color: #F2D22E;
+   
+}
+nav {
+    background-color: #F27127;
+  
+   
+
+   
+}
+article {
+    background-color: #fff;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    
+}
+main {
+    background-color: #6064BF;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+body {
+    background-color:#5662A6;
+}
+footer {
+    background-color: #F2D22E;
+   height: 30px;
+   margin: auto;
+   width: 500px;
+   border-radius: 1.5px;
+}
+.txtfooter {
+    text-align: center;
+    text-decoration: underline;
+   padding: 5px;
+    
+}
+p {
+    .hind-madurai-light {
+        font-family: "Hind Madurai", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .hind-madurai-regular {
+        font-family: "Hind Madurai", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .hind-madurai-medium {
+        font-family: "Hind Madurai", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .hind-madurai-semibold {
+        font-family: "Hind Madurai", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      .hind-madurai-bold {
+        font-family: "Hind Madurai", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      h2 {
+        .pt-serif-regular {
+            font-family: "PT Serif", serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+          
+          .pt-serif-bold {
+            font-family: "PT Serif", serif;
+            font-weight: 700;
+            font-style: normal;
+          }
+          
+          .pt-serif-regular-italic {
+            font-family: "PT Serif", serif;
+            font-weight: 400;
+            font-style: italic;
+          }
+          
+          .pt-serif-bold-italic {
+            font-family: "PT Serif", serif;
+            font-weight: 700;
+            font-style: italic;
+          }
+          
+      }
+      h1 {
+        .hind-madurai-light {
+            font-family: "Hind Madurai", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+          }
+          
+          .hind-madurai-regular {
+            font-family: "Hind Madurai", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+          
+          .hind-madurai-medium {
+            font-family: "Hind Madurai", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+          }
+          
+          .hind-madurai-semibold {
+            font-family: "Hind Madurai", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+          }
+          
+          .hind-madurai-bold {
+            font-family: "Hind Madurai", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+          }
+          
+      }
+      
+}

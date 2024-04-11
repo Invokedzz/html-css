@@ -1,0 +1,24 @@
+
+
+
+
+
+body {
+    background-image: linear-gradient(to top, #c9bf31f0, #8fcbe3e8);
+    
+}
+main {
+    background-color: #fff;
+    margin: auto;
+    width: 1000px;
+    padding: 15px;
+    text-shadow: 0.3px 0.2px 0.3px;
+    border-radius: 10px;
+    text-align: justify;
+    font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 16px;
+  font-style: normal;
+    
+
+}

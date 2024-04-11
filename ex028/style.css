@@ -1,0 +1,63 @@
+
+
+body {
+    background-color: blanchedalmond;
+}
+
+main {
+    background-color: #fff;
+    text-align:justify;
+    border-radius: 10px;
+    margin: auto;
+    padding: 5px;
+    width: 750px;
+   font-family: "Young Serif", serif;
+   font-weight: 400;
+    font-style: normal;
+}
+
+#mtitle {
+    color: hsl(30, 10%, 34%);
+
+}
+.parag {
+    font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+
+}
+
+.stitle {
+    color: hsl(30, 10%, 34%);
+   padding: 15px;
+   
+}
+
+.foto {
+    text-align: center;
+    padding: 10px;
+     margin: auto;
+    border-radius: 10px;
+}
+    
+
+div {
+    background-color: hsl(330, 100%, 98%);
+    padding: 10px;
+    border-radius: 7px;
+    margin: auto;
+    font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+  width: 650px;
+}
+
+.prep {
+    padding: 10px;
+    text-align: left;
+    color: hsl(332, 51%, 32%);
+}
+
+
