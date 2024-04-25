@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ :root {
+    --color1: hsl(158, 36%, 37%);
+    --color2: hsl(30, 38%, 92%);
+    --color3: hsl(212, 21%, 14%);
+    --color4: hsl(228, 12%, 48%);
+    --color5: hsl(0, 0%, 100%);
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Fraunces', serif;
+ }
+ main {
+   display: flex;
+ }
+ 
