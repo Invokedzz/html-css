@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root {
+    --color1: hsl(215, 51%, 70%);
+    --color2: hsl(178, 100%, 50%);
+    --color3: hsl(217, 54%, 11%);
+    --color4: hsl(216, 50%, 16%);
+    --color5: hsl(215, 32%, 27%);
+    --color6: hsl(0, 0%, 100%);
+    --font: 'Outfit', sans-serif;
+}
+body {
+    background-color: var(--color3);
+}
+main {
+    background-color: var(--color4);
+    max-width: 350px;
+    margin: 2vh auto;
+    border-radius: 10px;
+}
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parent .child {
+    margin-top: 20px;
+    box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.233);
+    position: relative;
+}
+.child .eye {
+    position: absolute;
+    background-color: var(--color2);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+} 
+.child .eye:hover {
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.child .eye img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.parent .child img {
+    width: 300px;
+    border-radius: 10px;
+}
+main .main-block {
+    display: block;
+    margin-left: 20px;
+}
+main h1 {
+    color: var(--color6);
+    font-family: var(--font);
+    font-size: 20px;
+    font-weight: 400;
+}
+main .main-text {
+    font-family: var(--font);
+    font-size: 16px;
+    color: var(--color1);
+    font-weight: 200;
+    max-width: 300px;
+}
+main .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .informations-1 {
+    color: var(--color2);
+    font-family: var(--font);
+    font-weight: 300;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+main .informations-2 {
+    padding-right: 15px;
+    margin-top: 2px;
+    color: var(--color1);
+    font-family: var(--font);
+}
+main .info {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+aside {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+main .image-icon {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+main .wyvern {
+    padding-top: 8px;
+    font-family: var(--font);
+    color: var(--color1);
+    font-weight: 300;
+}
+main .image-icon img {
+    max-width: 30px;
+    border: 1px solid var(--color6);
+    border-radius: 20px;
+}
+.link-text {
+    text-decoration: none;
+    color: var(--color6);
+}
+.link-text:hover {
+    color: var(--color2);
+    text-decoration: none;
+}
+.image-link:hover {
+    background-image: url(nft-preview-card-component-main/images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-attachment: cover
+    ;
+}
