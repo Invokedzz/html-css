@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+:root {
+    --color1: hsl(179, 62%, 43%);
+    --color2: hsl(71, 73%, 54%);
+    --color3: hsl(204, 43%, 93%);
+    --color4: hsl(218, 22%, 67%);
+    --font1: 'Karla', sans-serif; 
+}
+body {
+    background-color: var(--color3);
+}
+main {
+    background-color: #fff;
+    max-width: 800px;
+    margin:  20vh auto;
+    border-radius: 5px;
+}
+.overall {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+main h1 {
+    font-family: var(--font1);
+    color: var(--color1);
+}
+main h2 {
+    font-family: var(--font1);
+    color: var(--color2);
+}
+main h3 {
+    color: var(--color3);
+    font-family: var(--font1);
+}
+#subscription {
+    margin-bottom: 20px;
+}
+#why-us {
+    margin-right: 15vh;
+    margin-top: 30px;
+}
+main .text-community {
+    font-family: var(--font1);
+    color: var(--color4);
+    font-size: 16px;
+    line-height: 8px;
+}
+.main-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7vh;
+}
+.left-box {
+    background-color: var(--color1);
+    width: 50%;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.left-box-justify {
+    line-height: 2px;
+    margin-bottom: 30px;
+}
+.right-box {
+    background-color: hsl(179, 61%, 47%);
+    width: 50%;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text-box-right {
+    color: var(--color3);
+    font-family: var(--font1);
+    font-size: 16px;
+    max-width: 200px;
+    margin-bottom: 40px;
+}
+.text-box-left {
+    font-family: var(--font1);
+    color: var(--color3);
+}
+.dollar {
+    font-weight: bold;
+    font-size: 2em;
+    color: var(--color3);
+    font-family: var(--font1);
+}
+span {
+    color: var(--color4);
+    font-family: var(--font1);
+    font-weight: bold;
+    font-size: 16px;
+}
+article {
+    background-color: var(--color2);
+    font-family: var(--font1);
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
+    width: 25vh;
+    box-shadow: 0.2px 0.2px 4px rgba(0, 0, 0, 0.256);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
