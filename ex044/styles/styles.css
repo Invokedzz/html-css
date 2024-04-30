@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+:root {
+    --color1: hsl(31, 77%, 52%);
+    --color2: hsl(184, 100%, 22%);
+    --color3: hsl(179, 100%, 13%);
+    --color4: hsla(0, 0%, 100%, 0.75);
+    --color5: hsl(0, 0%, 95%);
+    --font1: 'Lexend Deca', sans-serif;
+    --font2: 'Big Shoulders Display', sans-serif;
+}
+body {
+    background-color: var(--color5);
+}
+main {
+    background-color: var(--color5);
+    margin: auto;
+    margin-top: 20vh;
+    height: 50vh;
+    max-width: 800px;
+    display: flex;
+}
+.sedans-article .image {
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.suv-article .image {
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.luxury-article .image {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.sedans-article {
+    background-color: var(--color1);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-top: 10px;
+}
+.suv-article {
+    background-color: var(--color2);
+    padding-top: 10px;
+}
+.luxury-article {
+    background-color: var(--color3);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 10px;
+}
+main h1 {
+    color: var(--color5);
+    font-family: var(--font2);
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+main p {
+    color: var(--color4);
+    font-family: var(--font1);
+    width: 210px;
+    font-weight: 300;
+    line-height: 25px;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+article {
+    background-color: var(--color5);
+    border-radius: 20px;
+    box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.327);
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 10px;
+}
+span {
+    text-align: center;
+    font-family: var(--font1);
+    padding: 8px;
+    font-size: 14px;
+}
+.attribution {
+    text-align: center;
+}
+.abt-sedans {
+    color: var(--color1);
+}
+.abt-suvs {
+    color: var(--color2);
+}
+.abt-luxury {
+    color: var(--color3);
+}
