@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+:root {
+    --color1: hsl(225, 100%, 94%);
+    --color2: hsl(245, 75%, 52%);
+    --color3: hsl(225, 100%, 98%);
+    --color4: hsl(224, 23%, 55%);
+    --color5: hsl(223, 47%, 23%);
+    --font: 'Red Hat Display', sans-serif;
+}
+body {
+    background-image: url(../frontend/order-summary-component-main/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main {
+    font-family: var(--font);
+    background-color: var(--color3);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 8vh;
+    max-width: 500px;
+}
+.illustration-hero img {
+    width: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.main-content {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.main-content p {
+    width: 300px;
+    color: var(--color4);
+    font-weight: 500;
+}
+.sub-content {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color1);
+    width: 300px;
+    border-radius: 20px;
+    padding: 5px;
+}
+.change-word {
+    display: flex;
+    justify-content: right;
+    padding-top: 20px;
+    padding-left: 20%;
+}
+.change-word a {
+    color: var(--color2);
+}
+.info-payment {
+    line-height: 10px;
+}
+.music-icon {
+    padding: 8px;
+    margin-right: 10px;
+}
+.info-payment h2, h3 {
+    font-size: 16px;
+}
+.info-payment h3 {
+    color: var(--color4);
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+aside .payment {
+    background-color: var(--color2);
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.174);
+}
+aside .payment .confirm-btn {
+    padding: 1px;
+    color: var(--color1);
+    font-weight: bold;
+}
+
+.cancel-order {
+    color: var(--color4);
+    font-weight: bold;
+}
+.attribution {
+    text-align: center;
+    font-size: 11px;
+}
+.attribution a {
+   color: hsl(228, 45%, 44%);
+}
