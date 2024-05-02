@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --color1: hsl(257, 40%, 49%);
+    --color2: hsl(300, 69%, 71%);
+    --font1: 'Poppins', sans-serif;
+    --font2: 'Open Sans', sans-serif;
+}
+body {
+    background-image: url(../frontend/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
+    background-size: cover;
+    background-color: var(--color1);
+    height: 100vh;
+}
+main {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.main-container {
+    display: flex;
+    padding-top: 10vh;
+}
+.text-box {
+    color: #fff;
+    padding-top: 25px;
+    padding-left: 30px;
+}
+.text-box h1 {
+    font-family: var(--font1);
+    font-size: 2em;
+    line-height: 25px;
+}
+.text-box p {
+    font-family: var(--font2);
+    max-width: 500px;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+.register-btn {
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin-left: 10px;
+    box-shadow: 4px 2px 3px rgba(0, 0, 0, 0.24);
+    font-family: var(--font1);
+    font-size: 14px;
+    background-color: #fff;
+    color: var(--color1);
+}
+.register-btn:hover {
+    background-color: #c0bdbd;
+}
+.attribution {
+    text-align: center;
+    font-size: 11px;
+}
+.attribution a {
+    color: #fff;
+}
