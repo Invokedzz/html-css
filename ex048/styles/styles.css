@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+:root {
+    --color1: hsl(300, 43%, 22%);
+    --color2: hsl(333, 80%, 67%);
+    --color3: hsl(303, 10%, 53%);
+    --color4: hsl(300, 24%, 96%);
+    --color5: hsl(0, 0%, 100%);
+    --font: 'League Spartan', sans-serif;
+}
+body {
+    background-image: url(../frontend/social-proof-section-master/images/bg-pattern-top-desktop.svg);
+    background-image: url(../frontend/social-proof-section-master/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: var(--font);
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+}
+.opening-container h1 {
+    color: var(--color1);
+    max-width: 400px;
+    font-size: 3em;
+    padding-top: 30px;
+}
+.opening-container p {
+    color: var(--color3);
+    font-weight: 500;
+    line-height: 20px;
+    max-width: 400px;
+}
+.box-review, .box-guru, .box-tech {
+    display: flex;
+    border-radius: 10px;
+    background-color: var(--color4);
+    color: var(--color1);
+    font-weight: 700;
+    max-width: 400px;
+    padding-left: 20px;
+}
+.box-review {
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+.box-guru {  
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.box-tech {
+    margin-left: 100px;
+    padding-right: 30px;
+}
+.image-star {
+    padding-top: 10px;
+    padding-right: 30px;
+}
+.image-star img {
+    padding-top: 4px;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+.rate-container {
+    margin-top: 7%;
+    height: 20vh;
+}
+.avaliations {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.row-box-1, .row-box-2, .row-box-3 {
+    background-color: var(--color1);
+    border-radius: 10px;
+    line-height: 20px;
+    color: var(--color5);
+}
+span {
+    color: var(--color2);
+}
+.info {
+    margin-top: 20px;
+    margin-bottom:20px;
+    line-height: 5px;
+}
+.row-box-1 {
+    width: 300px;
+    padding: 20px;
+    height: 200px;
+    margin-right: 40px;
+}
+.row-box-sub {
+    display: flex;
+    height: 80px;
+    padding-left: 5px;
+    margin-left: 20px;
+}
+.image-profile {
+    border-radius: 3px;
+    padding-top: 25px;
+    padding-right: 20px;
+}
+.row-box-sub img {
+    width: 40px;
+    border-radius: 20px;
+}
+.row-box-2 {
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 40px;
+    height: 200px;
+    width: 300px;
+}
+.row-box-3 {
+    padding: 20px;
+    margin-top: 40px;
+    margin-right: 10px;
+    width: 300px;
+    height: 200px;
+}
+.nickname-1, .nickname-2, .nickname-3 {
+    font-weight: 600;
+}
+.avaliations-text {
+    margin-left: 10px;
+    max-width: 280px;
+}
