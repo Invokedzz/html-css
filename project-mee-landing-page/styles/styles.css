@@ -1,0 +1,58 @@
+:root {
+    --color1: #151621;
+    --color2: #1F2129;
+    --color3: #50412D;
+    --color4: #0076FF;
+    --color5: #655768;
+    --color6: #272934;
+    --color7: #E5A1BE;
+    --color8: #AC58E2;
+    --color9: #B174FF;
+    --color10: #9195AB;
+    --color11: #171826;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.aside-header {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #AC58E2, #E5A1BE);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.aside-header span {
+    background-color: #fff;
+    color: var(--color9);
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.main-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color1);
+    color: var(--color10);
+}
+.options-1 img {
+    width: 40px;
+    height: 40px;
+}
+main {
+    background-color: var(--color11);
+    background-image: url(../images-background/background-tree-desktop.svg);
+ 
+}
+main h1 {
+    color: #fff;
+}
+main p {
+    color: var(--color10);
+}
+.main-content {
+    display: flex;
+
+}
