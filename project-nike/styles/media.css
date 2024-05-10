@@ -1,5 +1,5 @@
 @media screen and (max-width: 750px){
-   
+
     body {
         display: flex;
         flex-direction: column;
@@ -7,9 +7,19 @@
     
     header {
         display: flex;
-        background-color: red;
+        justify-content: space-between;
+        background-color: #e4002b;
     }
-    
+
+    header .market-icons {
+        filter: invert(0);   
+    }
+
+    .main-container h1, p {
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
     .main-container {
         display: block;
     }
