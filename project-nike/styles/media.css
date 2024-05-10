@@ -1,0 +1,38 @@
+@media screen and (max-width: 750px){
+   
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header {
+        display: flex;
+        background-color: red;
+    }
+    
+    .main-container {
+        display: block;
+    }
+
+    .main-container .textbox {
+        margin-top: 7rem;
+    }
+
+    .main-container  .textbox p {
+        width: 300px;
+    }
+
+    .main-container .product-image-box img {
+        display: none;
+    }
+
+    .main-container::before {
+        display: none;
+    }
+
+    .social-media-icons {
+        position: absolute;
+        top: 65%;
+    }
+    
+}
