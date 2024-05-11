@@ -18,6 +18,11 @@ header {
     height: 60px;
 }
 
+header .logo:hover img {
+    filter: invert(1);
+    transition: 0.8s all;
+}
+
 header .logo img {
     height: 40px;  
 }
