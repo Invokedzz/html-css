@@ -2,6 +2,8 @@ let data = new Date();
 let horas = zerado(data.getHours());
 let dia = zerado(data.getDay());
 let ano = zerado(data.getFullYear());
+let minutos = zerado(data.getMinutes());
+let segundos = zerado(data.getSeconds());
 let diasTexto;
 
 function zerado (num) {
@@ -46,8 +48,8 @@ function inserirRes (mensagem) {
 
 function sitezada() {
     diasSemana();
-    const mensagem = `${diasTexto}, ${ano}, ${horas}`;
+    const mensagem = `${diasTexto}, ${ano}, ${horas}, ${minutos}, ${segundos}`;
     inserirRes(mensagem, true)
 }
-document.addEventListener('DOMContentLoaded', sitezada);
+let siteLoading = document.addEventListener('DOMContentLoaded', sitezada);
 sitezada(); 
