@@ -1,18 +1,18 @@
-let container = document.querySelector('#container');
-
-function resultado (elemento, mensagem) {
-    elemento.innerHTML = mensagem;
-}
 const elementos = [
-    {tag: 'p', texto: 'Frase 1'},
-    {tag: 'div', texto: 'Frase 2'},
+    {tag: 'p', texto: 'O Palmeiras não tem Mundial'},
+    {tag: 'div', texto: 'Messi entrará no Vasco'},
     {tag: 'section', texto: 'Frase 3'},
     {tag: 'footer', texto: 'Frase 4'},
 ];
+const container = document.querySelector('#container');
+const div = document.createElement('div'); 
+
 for (let i = 0; i < elementos.length; i++) {
     let {tag, texto} = elementos[i];
-    let criarTag = document.createElement('tag');
-    resultado(criarTag, texto);
-    container.appendChild(criarTag);
-    // const mensagem = resultado(mensagem, true);
+    const criaTag = document.createElement(tag);
+    const criaTexto = document.createTextNode(texto);
+    criaTag.appendChild(criaTexto);
+    div.appendChild(criaTag);
 }
+container.appendChild(div)
+console.log({tag, texto})
