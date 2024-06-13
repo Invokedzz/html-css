@@ -37,7 +37,7 @@ function criaBotao (li) {
     li.appendChild(botaoApagar); // Nessa função será proporcionado à nossa lista um botão - sendo esse responsável por apagar os comandos inseridos pelo usuário. A constante "botaoApagar" indica como o elemento fora criado. Daí, nomeamos ele por meio do nosso HTML e, logo em seguida, o inserimos dentro de uma class; class essa chamada de "apagar". Fiz isso por meio do "setAttribute". E, para finalizar a função, precisaríamos consequentemente inserir a função em nosso sistema. Tal ação fora feita através do "appendChild()". Portanto, o "botaoApagar" é um filho da lista que criamos anteriormente.  
 }
 
-btnTarefa.addEventListener('click', function (e) {
+btnTarefa.addEventListener('click', function () {
     if (!inputTarefa.value) return;
     criaTarefa(inputTarefa.value);
 }); // Resumidamente, ao clicarmos no botão, uma tarefa será inserida no HTML do site. Caso não houver nada na textbox, o "return" vai parar o evento. 
