@@ -3,11 +3,13 @@ function factoringCPF() {
         writename() {
             const name = document.querySelector('.name');
             if (!name || name.value === '') return false;
+            this.name = name.value;
             return true;
         },
         writenickname() {
             const nickname = document.querySelector('.nickname');
             if (!nickname || nickname.value === '') return false;
+            this.nickname = nickname.value;
             return true;
         },
         insertcpf() {
@@ -41,19 +43,35 @@ function factoringCPF() {
             }
             return false;
         },
+
         savingfunctions() {
             return this.writename() && this.writenickname() && this.insertcpf();
+        },
+
+        answertheuser (isValid) {
+            const res = document.querySelector('.res');
+            if (!res) {
+                console.error('Elemento não encontrado');
+                return;
+            }
+            if (isValid) {
+                res.innerText = `Seu CPF foi verificado e aprovado ${this.name} ${this.nickname}!` 
+            } else {
+                res.innerText = `Seu CPF não foi aprovado!`
+            }
+        },
+        
+        receivemsg (msg) {
+           this.answertheuser(false);
+           const usermsg = `${this.name} ${this.nickname}!`
+           return usermsg += msg;
         },
         clickbtn() {
             const form = document.querySelector('.btn-block');
             form.addEventListener('submit', e => {
                 e.preventDefault();
-                const isValid = this.savingfunctions();
-                if (isValid) {
-                    alert('Válido');
-                } else {
-                    alert('Inválido');
-                }
+                let isValid = this.savingfunctions();
+                this.answertheuser(isValid);
             });
         }
     };
