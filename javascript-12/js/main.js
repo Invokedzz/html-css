@@ -12,6 +12,33 @@ function factoringCPF() {
             this.nickname = nickname.value;
             return true;
         },
+        writeuser() {
+            const user = document.querySelector('.user');
+            if (!user || user.value === '') return false;
+            if (user.value < 3 || user.value > 12) return false;
+            this.user = user.value;
+            return true;
+        },
+        writepassword() {
+            const password = document.querySelector('.password');
+            if (!password || password.value === '') return false;
+            if (password.value < 6 || password.value > 12) return false;
+            this.password = password.value;
+            return true;
+        },
+        rewritepassword() {
+            const repassword = document.querySelector('.repeat-password');
+            if (!repassword || repassword.value === '') return false;
+            if (repassword.value < 6 || repassword.value > 12) return false;
+            this.repassword = repassword.value;
+            return true;
+        },
+        vspassword() {
+            const firstpassword = this.password;
+            const secondpassword = this.repassword;
+            if (firstpassword !== secondpassword) return false;
+            return true;
+        },
         insertcpf() {
             const cpf = document.querySelector('.cpf').value;
             this.valorCPF = cpf.replace(/[^\d]/g, '');
@@ -45,7 +72,7 @@ function factoringCPF() {
         },
 
         savingfunctions() {
-            return this.writename() && this.writenickname() && this.insertcpf();
+            return this.writename() && this.writenickname() && this.insertcpf() && this.writeuser() && this.writepassword() && this.rewritepassword() && this.vspassword();
         },
 
         answertheuser (isValid) {

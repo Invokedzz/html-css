@@ -1,14 +1,14 @@
 body {
-    height: 87vh;
+    height: 50vh;
     background-color: #000;
 }
 
 main {
     background-color: #fff;
-    height: 70vh;
+    height: 95vh;
     max-width: 80vh;
     margin: auto;
-    margin-top: 10vh;
+    margin-top: 2vh;
     border-radius: 15px;
 }
 
