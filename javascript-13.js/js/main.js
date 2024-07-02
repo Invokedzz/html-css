@@ -1,12 +1,14 @@
 class Validate {
     constructor () {
-        this.form = document.querySelector('.formulario');
+        this.form = document.querySelector('.formulario'); 
+        // Cria-se um "constructor" para chamar o elemento principal "form", e então, chamamos outra funcionalidade. Note que, nas funções iniciais, a quantidade de funcionalidades foi resumida.
         this.events();
     }
 
     events () {
         this.form.addEventListener('submit', e => {
-            this.handlesubmit(e);
+            this.handlesubmit(e); 
+            // Aqui adicionamos um evento, e logo após o clique, inserimos uma funcionalidade; essa será responsável por "permitir" que tudo aconteça em nosso código. 
         });
     }
 
@@ -16,12 +18,14 @@ class Validate {
         const pass = this.passvalid();
         const user = this.uservalid(this.form.querySelector('.user'));
         const name = this.namevalid(this.form.querySelector('.name'));
-        const nickname = this.nicknamevalid(this.form.querySelector('.nickname'));
+        const nickname = this.nicknamevalid(this.form.querySelector('.nickname')); 
+        // Inserimos praticamente todas as variáveis necessárias aqui, ao mesmo tempo que deixamos elas arquivadas em nosso projeto. Quando "pass", "user", "name" e "nickname" forem SATISFEITOS o "submit" será feito propriamente.
         if (pass && user && name && nickname) {
             alert('Thanks for sending the form.');
-            this.form.submit(); // Tem que arrumar                      =+
+            this.form.submit(); 
         }
     }
+// Condições de existência para nome e sobrenome.
 
     namevalid (n) {
         let valid = true;
@@ -50,6 +54,8 @@ class Validate {
         }
         return valid;
     }
+
+    // Condições de existência para "senha" e "repetir senha" (creio que tenha sido a parte + trabalhosa), mas ao mesmo tempo, poderia ficar mais resumida :(. As constantes poderiam ser chamadas em uma única função, e na outra poderíamos analisar suas igualdades.
 
     writepassword () {
         let valid = true;
@@ -84,6 +90,8 @@ class Validate {
         return valid;
     }
 
+    // Validação de usuário.
+
     uservalid (field) {
         let valid = true;
         const user = field.value;
@@ -93,6 +101,8 @@ class Validate {
         }
         return valid;
     }
+
+    // Criação da mensagem de erro, e abaixo, uma função que "limpa" essas mensagens.
 
     errortext (camp, msg) {
         const div = document.createElement('div');
