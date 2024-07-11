@@ -18,7 +18,7 @@ const randomWeight = [];
 
 const randomSkin = [];
 
-const beardTypesize = [];
+const beardType = ['Chevron moustache', 'Dali moustache', 'English moustache', 'Fu Manchu', 'Handlebar moustache', 'Horseshoe moustache', 'Hungarian moustache', 'Imperial moustache', 'Lampshade moustache', 'Pencil moustache', 'Pyramid moustache', 'Walrus moustache', 'Zapata moustache', 'The Zappa', 'Goatee', 'Goat patch', 'Balbo', 'Anchor beard', 'Soul patch', 'Van Dyke beard', 'Verdi beard', 'Garibaldi beard', 'Folkbeard', 'Sideburns', 'Sidewhiskers', 'Shenandoah', 'Neckbeard', 'Mutton chops', 'Circle beard', 'Hulihee'];
 
 function getRandomvalue (maximum) {
     return (Math.floor(Math.random() * maximum));
@@ -39,20 +39,44 @@ function getRandomRC () {
     return `${rpgClasses[randomClasses]}: ${rpgRaces[randomRaces]}`;
 }
 function setRandomM () {
-    const htmlname = document.querySelector('.result');
-    htmlname.innerHTML = getRandomnameM();
+    const generating = document.querySelector('.elements');
+    const htmlnamem = document.createElement('div');
+    htmlnamem.classList.add('result');
+    htmlnamem.innerHTML = getRandomnameM();
+    generating.appendChild(htmlnamem);
+}
+function eraseText () {
+    const msg = document.querySelectorAll('.result');
+    msg.forEach(msg => {
+        msg.remove();
+    });
 }
 function setRandomF () {
-    const htmlnamef = document.querySelector('.result2');
+    const generating2 = document.querySelector('.elements2');
+    const htmlnamef = document.createElement('div');
+    htmlnamef.classList.add('result');
     htmlnamef.innerHTML = getRandomnameF();
+    generating2.appendChild(htmlnamef);
 }
 function setRandomRC () {
-    const htmlnamerc = document.querySelector('.result3');
+    const generating3 = document.querySelector('.elements3');
+    const htmlnamerc = document.createElement('div');
+    htmlnamerc.classList.add('result');
     htmlnamerc.innerHTML = getRandomRC();
+    generating3.appendChild(htmlnamerc);
 }
 const btnclick = document.querySelector('.generate');
-btnclick.addEventListener('click', setRandomM);
+btnclick.addEventListener('click', function () {
+    eraseText();
+    setRandomM();
+});
 const btnclickf = document.querySelector('.generate2');
-btnclickf.addEventListener('click', setRandomF);
+btnclickf.addEventListener('click', function () {
+    eraseText();
+    setRandomF();
+});
 const btnclickrc = document.querySelector('.generate3');
-btnclickrc.addEventListener('click', setRandomRC);
+btnclickrc.addEventListener('click', function () {
+    eraseText();
+    setRandomRC();
+});
