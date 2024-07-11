@@ -12,7 +12,7 @@ const randomHair = ['Buzz cut', 'Bowl cut', 'Crew cut', 'Mullet', 'Curly', 'Faux
 
 const randomFace = ['Square', 'Round', 'Heart Face shape', 'Triangle', 'Oval', 'Diamond', 'Pear', 'Oblong', 'Rectangle', 'V-Triangle', 'A-Triangle', 'Heptagon'];
 
-const randomEyecolor = ['Brown Eyes', 'Blue Eyes', 'Hazel Eyes', 'Amber Eyes', 'Gray Eyes', 'Green Eyes'];
+const randomEyecolor = ['Brown', 'Blue', 'Hazel', 'Amber', 'Gray', 'Green'];
 
 const randomWeight = [];
 
@@ -37,6 +37,33 @@ function getRandomRC () {
     const randomRaces = getRandomvalue(rpgRaces.length);
     const randomClasses = getRandomvalue(rpgClasses.length);
     return `${rpgClasses[randomClasses]}: ${rpgRaces[randomRaces]}`;
+}
+function getRandomHair () {
+    const randomH = getRandomvalue(randomHair.length);
+    return `Hair Style: ${randomHair[randomH]}`;
+}
+function getRandomEye () {
+    const randomEye = getRandomvalue(randomEyecolor.length);
+    return `Eye color: ${randomEyecolor[randomEye]}`;
+}
+function getRandomFace () {
+    const randomFacial = getRandomvalue(randomFace.length);
+    return `Face: ${randomFace[randomFacial]}`;
+}
+function getRandombeard () {
+    const randomBee = getRandomvalue(beardType.length);
+    return `Beard: ${beardType[randomBee]}`;
+}
+function setfullAppM () {
+    getRandomHair();
+    getRandomEye();
+    getRandomFace();
+    getRandombeard();
+}
+function setfullAppF () {
+    getRandomHair();
+    getRandomEye();
+    getRandomFace();
 }
 function setRandomM () {
     const generating = document.querySelector('.elements');
@@ -80,3 +107,8 @@ btnclickrc.addEventListener('click', function () {
     eraseText();
     setRandomRC();
 });
+/* const btnclickfullM = document.querySelector('.generateM');
+btnclickFullM.addEventListener('click', function () {
+    eraseText();
+    setfullAppM();
+}) */
