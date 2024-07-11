@@ -8,11 +8,11 @@ const rpgClasses = ['Cleric', 'Barbarian', 'Alchemist', 'Sorcerer', 'Wizard', 'B
 
 const rpgRaces = ['Elf', 'Dwarf', 'Orc', 'Human', 'Centaur', 'Gnome', 'Dragonborn', 'Troll', 'Giant', 'Fairy', 'Lizardman', 'Gnoll', 'Minotaur', 'Pixie', 'Dark Elf'];
 
-const randomHair = [];
+const randomHair = ['Buzz cut', 'Bowl cut', 'Crew cut', 'Mullet', 'Curly', 'Faux Hawk', 'French crop', 'Butch cut', 'Low fade', 'Curly fringe', 'Short curly quiff', 'Textured pompadour fade', 'Curly bangs', 'Wolf cut', 'Long pixie haircut', 'Messy Shaggy', 'Blunt lob', 'Blunt bangs', 'Bold pixie', 'Layered hair', 'Blonde bob', 'Butterfly cut', 'Middle part', 'Asymmetrical bangs'];
 
-const randomFace = [];
+const randomFace = ['Square', 'Round', 'Heart Face shape', 'Triangle', 'Oval', 'Diamond', 'Pear', 'Oblong', 'Rectangle', 'V-Triangle', 'A-Triangle', 'Heptagon'];
 
-const randomEyecolor = [];
+const randomEyecolor = ['Brown Eyes', 'Blue Eyes', 'Hazel Eyes', 'Amber Eyes', 'Gray Eyes', 'Green Eyes'];
 
 const randomWeight = [];
 
