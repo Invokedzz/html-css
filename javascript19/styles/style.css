@@ -4,9 +4,14 @@
 }
 
 .game {
-    width: 500px;
-    height: 200px;
+    margin: auto;
+    width: 1000px;
+    height: 467px;
     border: 1px solid black;
+    background-image: url('../raoni-dorim-mountains-day-highress-01.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .character {
@@ -14,7 +19,7 @@
     height: 50px;
     background-color: salmon;
     position: relative;
-    top: 150px;
+    top: 417.5px;
 }
 
 .animate {
@@ -26,14 +31,15 @@
     height: 20px;
     background-color: red;
     position: relative;
-    top: 130px;
-    left: 480px;
+    top: 398px;
+    right: 100%;
     animation: block 1s infinite linear;
 }
 
 @keyframes block {
-    0%{left: 480px;}
-    100%{left: -40px;}
+    0%{left: 970px;}
+    50%{left: 500px;}
+    100%{left: -27px;}
 }
 
 @keyframes jump {
