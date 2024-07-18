@@ -8,7 +8,6 @@
     width: 1000px;
     height: 467px;
     border: 1px solid black;
-    background-image: url('../raoni-dorim-mountains-day-highress-01.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top;
@@ -17,9 +16,15 @@
 .character {
     width: 20px;
     height: 50px;
-    background-color: salmon;
     position: relative;
-    top: 417.5px;
+    top: 359px;
+}
+
+.character img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 10px;
 }
 
 .animate {
@@ -28,12 +33,22 @@
 
 .block {
     width: 20px;
-    height: 20px;
+    height: 150px;
     background-color: red;
     position: relative;
-    top: 398px;
+    top: 270px;
     right: 100%;
     animation: block 1s infinite linear;
+}
+
+.block2 {
+    width: 20px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    bottom: 200px;
+    right: 100%;
+    animation: block 1.5s infinite linear;
 }
 
 @keyframes block {
