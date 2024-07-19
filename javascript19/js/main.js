@@ -1,6 +1,5 @@
 let character = document.querySelector('.character');
 let terrain = document.querySelector('.block');
-let blueTerrain = document.querySelector('.block2');
 let isJumping = false;
 
 function jumpBlock() {
@@ -22,30 +21,9 @@ document.addEventListener('keydown', function (e) {
     }
 });
 
-let checkIfdead1 = function () {
+let checkIfdead = function () {
     let topChar = parseInt(window.getComputedStyle(character).getPropertyValue('top'));
     let blockLeft = parseInt(window.getComputedStyle(terrain).getPropertyValue('left'));
-    return { topChar, blockLeft };
+    if (blockLeft < 20 && blockLeft > 0 && topChar >= 130) alert('U died');
 };
-
-let checkIfdead2 = function () {
-    let blueLeft = parseInt(window.getComputedStyle(blueTerrain).getPropertyValue('bottom'));
-    return { blueLeft };
-};
-
-let checkCharacter = function () {
-    let topChar = parseInt(window.getComputedStyle(character).getPropertyValue('top'));
-    return { topChar };
-};
-
- let checkDead = setInterval(function () {
-    let redBlock = checkIfdead1();
-    let blueBlock = checkIfdead2();
-    let characterHitbox = checkCharacter();
-
-    // Exemplo de verificação de colisão
-    if (redBlock.blockLeft < 60 && redBlock.blockLeft > 0 && characterHitbox.topChar >= 300) alert('Você morreu!');
-
-    if (blueBlock.blueLeft < 180 && blueBlock.blueLeft > 0 && characterHitbox.topChar >= 300) alert('You died!') 
-}, 10);
 
