@@ -1,8 +1,8 @@
-const randomMalename = ['Aaron', 'Agmund', 'Adebert', 'Adremar', 'Abraham', 'Bertegar', 'Craft', 'Lamond', 'Landulf', 'Laurence', 'Lauger', 'Leonard', 'James', 'Liutmar', 'Luke', 'Luther', 'Lautard', 'Mancius', 'Macduff', 'Macbeth', 'Magnus', 'Maelgwn', 'Maol', 'Robb', 'Mordecai', 'Otto', 'Olaf', 'Oliver', 'Orm', 'Oswin', 'Otrad', 'Ortwin', 'Patrick', 'Paul', 'Pax', 'Peter'];
+const randomMalename = ['Aaron', 'Agmund', 'Adebert', 'Adremar', 'Abraham', 'Bertegar', 'Craft', 'Lamond', 'Landulf', 'Laurence', 'Lauger', 'Leonard', 'James', 'Liutmar', 'Luke', 'Luther', 'Lautard', 'Mancius', 'Macduff', 'Macbeth', 'Magnus', 'Maelgwn', 'Maol', 'Robb', 'Mordecai', 'Otto', 'Olaf', 'Oliver', 'Orm', 'Oswin', 'Otrad', 'Ortwin', 'Patrick', 'Paul', 'Pax', 'Peter', 'Logan', 'Nohr', 'Arn', 'Feryar', 'Jedhian', 'Ronal', 'Thix', 'Carl', 'Chirp', 'Damien', 'Fixer', 'Jax', 'Mangrove', 'Alendis', 'Bartolotti', 'Emilio', 'Grinaldi', 'Zadrous', 'Regness', 'Arturo', 'Fernando', 'Eddard'];
 
-const randomFemalename = ['Cassian', 'Frederica', 'Felicia', 'Grace', 'Hildeberta', 'Honora', 'Hermana', 'Hilderada', 'Ida', 'Idalia', 'Justa', 'Katherin', 'Laria', 'Louisa', 'Laurencia', 'Leona', 'Luthera', 'Lydia', 'Lucretia', 'Leah', 'Lena', 'Meliora', 'Michaela', 'Mary', 'Maria', 'Magdalene', 'Marina', 'Osanna', 'Paradisa', 'Pacifica', 'Penelope', 'Quiteria', 'Quintana', 'Petra'];
+const randomFemalename = ['Cassian', 'Frederica', 'Felicia', 'Grace', 'Hildeberta', 'Honora', 'Hermana', 'Hilderada', 'Ida', 'Idalia', 'Justa', 'Katherin', 'Laria', 'Louisa', 'Laurencia', 'Leona', 'Luthera', 'Lydia', 'Lucretia', 'Leah', 'Lena', 'Meliora', 'Michaela', 'Mary', 'Maria', 'Magdalene', 'Marina', 'Osanna', 'Paradisa', 'Pacifica', 'Penelope', 'Quiteria', 'Quintana', 'Petra', 'Sethra', 'Mariel', 'Emralla', 'Falia', 'Alice', 'Ann'];
 
-const randomNickname = ['Ator', 'The Wild', 'The Bald', 'The Fat', 'The Small', 'Cave', 'Frambolt', 'The Wake', 'Sot', 'The Black', 'Rot', 'The Englishman', 'Sterre', 'The Whelp', 'Grim', 'The Tall', 'Barn', 'Frost', 'The Harper', 'Bigga', 'The Man of Esgar', 'Wisce', 'Gleawbeorht', 'Lang', 'Bellrope', 'The White', 'Spuda', 'The Pig', 'Croc', 'The Meadmaker', 'Fifteen Acres', 'Wombstring', 'The Steersman', 'Bucstan', 'Haldein', 'Cida', 'The Red'];
+const randomNickname = ['Ator', 'The Wild', 'The Bald', 'The Fat', 'The Small', 'Cave', 'Frambolt', 'The Wake', 'Sot', 'The Black', 'Rot', 'The Englishman', 'Sterre', 'The Whelp', 'Grim', 'The Tall', 'Barn', 'Frost', 'The Harper', 'The Man of Esgar', 'Wisce', 'Gleawbeorht', 'Lang', 'Bellrope', 'The White', 'Spuda', 'The Pig', 'Croc', 'The Meadmaker', 'Fifteen Acres', 'Wombstring', 'The Steersman', 'Bucstan', 'Haldein', 'Cida', 'The Red', 'The Wanderer', 'The Burning Wand', 'The Diplomat', 'The Negotiator', 'Glass-Eyes', 'The Tar-Stained Swordsman', 'The Lurk Lantern', 'The Dreaded', 'The Faithless', 'Iceborn', 'Disciple of the False God', 'The Great Hearted', 'The Chicken Kicker', 'Priest of the Lost God', 'Archivist of Limbo', 'Speaker for The Rot', 'Doom of Fools', 'The Gifted', 'Timeless Hero', 'The Fateshifter', 'The Arisen', 'The Plague Swarm', 'Friend to All', 'The Collector'];
 
 const rpgClasses = ['Cleric', 'Barbarian', 'Alchemist', 'Sorcerer', 'Wizard', 'Berserker', 'Summoner', 'Paladin', 'Bard', 'Fighter', 'Archer', 'Warrior', 'Necromancer', 'Knight', 'Rogue', 'Battle Mage', 'White Mage', 'Red Mage', 'Engineer', 'Monk', 'Beastmaster', 'Jester'];
 
@@ -83,6 +83,10 @@ function setfullAppF (hair, eye, face, skin) {
     eye = getRandomEye();
     face = getRandomFace();
     skin = getRandomcolor();
+    fullHair(hair);
+    fullEye(eye);
+    fullFace(face);
+    fullSkin(skin);
 }
 
 function setRandomM () {
@@ -182,11 +186,11 @@ btnclickrc.addEventListener('click', function () {
 const btnclickfullM = document.querySelector('.generateM');
 btnclickfullM.addEventListener('click', function () {
     eraseText();
-    setfullAppM();
-}); 
 
-const btnclickfullF = document.querySelector('.generateF');
-btnclickfullF.addEventListener('click', function () {
-    eraseText();
-    setfullAppF();
+    const changeDisplay = document.querySelector('.genders');
+    const optionValue = changeDisplay.value;
+
+    if (optionValue === 'M') setfullAppM(); 
+    if (optionValue === 'F') setfullAppF();
+    
 });
