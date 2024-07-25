@@ -18,5 +18,3 @@ function firstPlanet (json) {
     const result = document.querySelector('.result');
     result.appendChild(table);
 }
-
-// To display: turn on the Live Server :)
