@@ -194,3 +194,18 @@ btnclickfullM.addEventListener('click', function () {
     if (optionValue === 'F') setfullAppF();
     
 });
+
+module.exports = {
+    randomMalename,
+    randomFemalename,
+    randomNickname, 
+    rpgClasses,
+    rpgRaces,
+    randomHair, 
+    randomFace,
+    randomSkin,
+    randomEyecolor,
+    beardType,
+}
+
+// Pegando os arrays para realizar testes unitários.
